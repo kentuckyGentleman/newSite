@@ -1,0 +1,170 @@
+@font-face{
+	font-family: LiteBold;
+	src: url("fonts/Liteweit-Bold.ttf");
+}
+
+@font-face{
+	font-family: LiteReg;
+	src: url("fonts/Liteweit-Regular.ttf");
+}
+
+@font-face{
+	font-family: NiteReg;
+	src: url("fonts/Niteweit-Regular.ttf");
+}
+
+@font-face{
+	font-family: NiteBold;
+	src: url("fonts/Niteweit-Bold.ttf");
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	transition: background-color 1s; 
+	-webkit-transition: background-color 1s;
+	height: 100%;
+}
+
+h2{
+	font-family: NiteBold;
+	font-size: 19px;
+	padding: 0;
+	margin: 0;
+}
+
+h3{
+	font-family: NiteReg;
+	font-size: 11px;
+	letter-spacing: 5;
+	padding: 0;
+	margin: 0;
+}
+
+h4{
+	font-family: NiteBold;
+	font-size: 11px;
+	letter-spacing: 4;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	font-family: LiteReg;
+	font-size: 19px;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	margin: 62px 0 0 0;
+	text-align: center;
+	h2{
+		margin: 25px 0 0 0;
+	}
+	h3{
+		margin: 3px 0 0 0;
+	}
+	img{
+		width: 56px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+button{
+	height: 62px;
+	padding: 0;
+	border: 2px solid #766400;
+	background-color: transparent;
+	font-family: NiteBold;
+	font-size: 16px;
+	color: #766400;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 256px;
+	transition-duration: 1s;
+}
+
+#nav{
+	position: absolute;
+  	left: 50%;
+  	top: 10%;
+  	transform: translate(-50%, -10%);
+  	-webkit-transform: translate(-50%, -10%);
+  	margin: 0;
+	padding: 0;
+	// transition-duration: .5s;
+	color: white;
+	ul{
+		width: 265px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		display: inline-block;
+		margin: 0 20px 0 0;
+		padding: 0;
+		opacity: .2;
+		transition-duration: .5s;
+	}
+	li:nth-child(3){
+		margin: 0;
+	}
+	img{
+		width: 112px;
+		margin: 13px 0 0 3px;
+		padding: 0;
+	}
+	img:nth-child(2),img:last-child{
+		width: 54px;
+	}
+}
+
+.story{
+	padding: 0;
+	margin: 0;
+}
+
+.learnMore{
+	position: absolute;
+  	left: 50%;
+  	top: 23%;
+  	transform: translate(-50%, -23%);
+  	-webkit-transform: translate(-50%, -23%);
+	text-align: center;
+	padding: 0;
+	width: 325px;
+	img{
+		width: 218px;
+		margin: 20px auto 0 auto;
+	}
+}
+
+.slide{
+	position: absolute;
+  	left: 50%;
+  	top: 40%;
+  	transform: translate(-50%, -40%);
+  	-webkit-transform: translate(-50%, -40%);
+	padding: 0;
+	width: 260px;
+	// transition-duration: 3s;
+	// opacity: 0;
+	color: #fff;
+	// img{
+	// 	margin: 9px 0 25px 0;
+	// }
+}
+
+.white{
+	position: absolute;
+	width: 75%;
+	height: 75%;
+	background-color: red;
+}	

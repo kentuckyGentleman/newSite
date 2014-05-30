@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Robert Grober</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+	</head>
+	<body>
+
+
+		<div id="nav">
+			<ul>
+				<li id='part1'>
+					<h4>PART 1</h4>
+					<img src="whitelogo.svg">
+				</li>
+				<li id='part2'>
+					<h4>PART 2</h4>
+					<img src="logo_02.svg">
+				</li>
+				<li id='part3'>
+					<h4>PART 3</h4>
+					<img src="logo_03.svg">
+				</li>
+			</ul>
+		</div>
+		<header>
+				<img src="logo.svg">
+				<h2>Robert Grober</h2>
+				<h3>INTERACTIVE DESIGNER</h3>
+		</header>
+
+		<div class="story">
+			<div>
+				<div class="learnMore">
+					<h2>How can we make your business more valuable and profitable?</h2>
+					<img src="main_arrow.svg">
+				</div>
+			</div>
+			<div>
+				<div class="slide">
+					<h2>Empathy</h2>
+					<p>
+						People care a lot about a lot. And because of the different worlds we come from, people care about very different things, at different times and in different places. Making an effort to get into someone&rsquo;s wheelhouse gives you a hell of a chance to create something meaningful.
+					</p>
+				</div>
+			</div>
+			<div>
+				<div class="slide">
+					<h2>Context</h2>
+					<p>
+						Numbers can't always stand on their own laurels. It&rsquo;s great to know what&rsquo;s happening, but it&rsquo;s hard to find out where you fit into someone&rsquo;s life if you don&rsquo;t know why and how something is happening. There&rsquo;s no sense in telling a story if you aren&rsquo;t telling the story where people actually are.
+					</p>
+				</div>
+			</div>
+			<div>
+				<div class="slide">
+					<h2>Value</h2>
+					<p>
+						&ldquo;What&rsquo;s in it for me?&rdquo; Seems like a very fair question to be asked when asking for people&rsquo;s time and attention. The saying should go, &ldquo;Ask and ye shall receive, only after ye hath given a reason to receive.&rdquo; Knowing what to say, how to say it and where to say it is essential to people giving a damn.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<button>I want to discuss my business</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"/></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav').hide();
+				var story = $('.story');
+				story.slick({
+		  			arrows: false,
+		  			infinite: true,
+		  			speed: 1500,
+				});
+				var whatSlide = story.slickCurrentSlide() + 1;
+				var partNumber = whatSlide;
+				// console.log("slide" + whatSlide);
+				// console.log("part" + partNumber);
+			
+			story.on("click", function(){
+				$(this).slickNext();
+				$('.slide').fadeIn(2000);
+				var whatSlide = story.slickCurrentSlide() + 1;
+				var partNumber = whatSlide;
+				// console.log("slide" + whatSlide);
+				// console.log("part" + partNumber);
+
+				if (whatSlide == 1){
+					$('.slide').fadeOut(function(){
+						$('header').fadeIn(2000);
+						// $('#nav').fadeOut();
+						// $('#part1,#part2,#part3').css('color', 'black');
+						$('body,html').css('background-color','white');
+					});
+				} 
+				if (whatSlide > 1){
+					$('header').fadeOut(1000, function(){
+						$('#nav').fadeIn(2000);
+						$('.slide').fadeIn(2000);
+						$('body,html').css('background-color','black');
+					});
+				}
+				if(whatSlide == 2){
+					$('#part1').css('opacity','1');
+					$('#part2').css('opacity','.2');
+					$('#part3').css('opacity','.2');
+				}
+				if(whatSlide == 3){
+					$('#part2').css('opacity','1');
+					$('#part1').css('opacity','.2');
+					$('#part3').css('opacity','.2');
+				}
+				if(whatSlide == 4){
+					$('#part3').css('opacity','1');
+					$('#part1').css('opacity','.2');
+					$('#part2').css('opacity','.2');
+				}
+				// if (whatSlide == 2 || whatSlide == 3 || whatSlide == 4){
+				// 	// $('#part1,#part2,#part3').css('color', 'white');
+				// 	$('header').hide();
+				// 	$('#nav').show();
+				// 	$('body,html').css('background-color','black');
+				// 	$('.slide').css('color','white');
+				// }
+			});
+		});
+		</script>
+	</body>
+</html>
