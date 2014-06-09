@@ -1,3 +1,5 @@
+// FONTS
+
 @font-face{
 	font-family: LiteBold;
 	src: url("fonts/Liteweit-Bold.ttf");
@@ -18,19 +20,20 @@
 	src: url("fonts/Niteweit-Bold.ttf");
 }
 
+// ELEMENTS
+
 body, html {
 	padding: 0;
 	margin: 0;
 	transition: background-color 1s; 
 	-webkit-transition: background-color 1s;
-	height: 100%;
 }
 
 h2{
 	font-family: NiteBold;
 	font-size: 19px;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 5px 0;
 }
 
 h3{
@@ -44,7 +47,7 @@ h3{
 h4{
 	font-family: NiteBold;
 	font-size: 11px;
-	letter-spacing: 4;
+	letter-spacing: 3;
 	line-height: 0;
 	padding: 0;
 	margin: 0;
@@ -55,11 +58,17 @@ p{
 	font-size: 19px;
 	padding: 0;
 	margin: 0;
+	line-height: 1.5;
 }
 
 header{
-	margin: 62px 0 0 0;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%, -10%);
+  	-webkit-transform: translate(-50%, -10%);
 	text-align: center;
+	width: 260px;
 	h2{
 		margin: 25px 0 0 0;
 	}
@@ -86,8 +95,21 @@ button{
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 256px;
+	width: 187px;
 	transition-duration: 1s;
+	button:hover{
+		color: #fff;
+		border: 2px solid #fff;
+	}
+}
+
+form{
+	margin: 35px 0 0 0;
+	input{
+		width: 100%;
+		height: 50px;
+		margin: 15px 0 0 0;
+	}
 }
 
 #nav{
@@ -101,19 +123,22 @@ button{
 	// transition-duration: .5s;
 	color: white;
 	ul{
-		width: 265px;
+		width: 290px;
 		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
 	li{
 		display: inline-block;
-		margin: 0 20px 0 0;
+		margin: 0 24px 0 0;
 		padding: 0;
 		opacity: .2;
 		transition-duration: .5s;
 	}
-	li:nth-child(3){
+	li:nth-child(1){
+	margin: 0 24px 0 0;
+	}
+	li:nth-child(4){
 		margin: 0;
 	}
 	img{
@@ -124,7 +149,14 @@ button{
 	img:nth-child(2),img:last-child{
 		width: 54px;
 	}
+	#home{
+		width: 18px;
+		height: 15px;
+		margin: 0 0 6px 0;
+	}
 }
+
+
 
 .story{
 	padding: 0;
@@ -134,26 +166,27 @@ button{
 .learnMore{
 	position: absolute;
   	left: 50%;
-  	top: 23%;
-  	transform: translate(-50%, -23%);
-  	-webkit-transform: translate(-50%, -23%);
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
 	text-align: center;
 	padding: 0;
 	width: 325px;
 	img{
-		width: 218px;
-		margin: 20px auto 0 auto;
+		width: 204px;
+		height: 13px;
+		margin: 33px auto 0 auto;
 	}
 }
 
 .slide{
 	position: absolute;
   	left: 50%;
-  	top: 40%;
-  	transform: translate(-50%, -40%);
-  	-webkit-transform: translate(-50%, -40%);
+  	top: 47%;
+  	transform: translate(-50%, -47%);
+  	-webkit-transform: translate(-50%, -47%);
 	padding: 0;
-	width: 260px;
+	width: 75%;
 	// transition-duration: 3s;
 	// opacity: 0;
 	color: #fff;
@@ -163,8 +196,82 @@ button{
 }
 
 .white{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	text-align: center;
+	.field:nth-child(2){
+		margin: 30px 0 0 0;
+	}
+	p{
+		text-align: left;
+		margin: 10% 0 0 0;
+	}
+	.wrapper{
+		width: 80%;
+		position: absolute;
+		left: 50%;
+	  	top: 50%;
+	  	transform: translate(-50%, -50%);
+	  	-webkit-transform: translate(-50%, -50%);
+	}
+	img{
+		width: 56px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	button{
+		position: relative;
+		width: 215px;
+		margin: 57px auto 0 auto;
+	}
+}
+
+.close{
 	position: absolute;
-	width: 75%;
-	height: 75%;
-	background-color: red;
-}	
+	top: 10px;
+	right: 10px;
+	padding: 15px 5px 15px 10px;
+	margin: 0;
+	border: 2px solid #ebebeb;
+	background-color: transparent;
+	font-family: NiteBold;
+	font-size: 16px;
+	color: #ebebeb;
+}
+
+@media all and (min-width: 500px){
+	#nav{
+	left: 30px;
+  	top: 35px;
+  	transform: none;
+  	-webkit-transform: none;
+  }
+}
+
+@media all and (min-width: 600px){
+	button{
+		bottom: 30px;
+		left: initial;
+		right: 30px;
+		margin: 0;
+  	}
+  	.white .wrapper{
+  		width: 480px;
+  	}
+}
+
+@media all and (min-width: 800px){
+	.learnMore{
+		width: 600;
+  	}
+}
+
+@media all and (min-width: 1000px){
+	.slide{
+		width: 650px;
+	}
+}
