@@ -14,7 +14,7 @@
   font-family: NiteBold;
   src: url("fonts/Niteweit-Bold.ttf"); }
 
-body, html {
+html, body {
   padding: 0;
   margin: 0;
   transition: background-color 1s;
@@ -36,7 +36,7 @@ h3 {
 h4 {
   font-family: NiteBold;
   font-size: 11px;
-  letter-spacing: 3;
+  letter-spacing: 5;
   line-height: 0;
   padding: 0;
   margin: 0; }
@@ -49,13 +49,12 @@ p {
   line-height: 1.5; }
 
 header {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, -10%);
-  -webkit-transform: translate(-50%, -10%);
+  margin: 0;
   text-align: center;
-  width: 260px; }
+  padding: 0;
+  background-color: green;
+  position: absolute;
+  bottom: 0; }
   header h2 {
     margin: 25px 0 0 0; }
   header h3 {
@@ -73,13 +72,12 @@ button {
   font-family: NiteBold;
   font-size: 16px;
   color: #766400;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 187px;
-  transition-duration: 1s; }
+  width: 187px; }
   button button:hover {
     color: #fff;
     border: 2px solid #fff; }
@@ -93,25 +91,21 @@ form {
 
 #nav {
   position: absolute;
-  z-index: 100;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, -10%);
-  -webkit-transform: translate(-50%, -10%);
-  margin: 0;
+  margin: 0 0 0 50px;
+  bottom: 0;
   padding: 0;
   color: white; }
   #nav ul {
-    width: 290px;
+    width: 320px;
     list-style: none;
     padding: 0;
     margin: 0; }
   #nav li {
+    text-align: center;
     display: inline-block;
     margin: 0 24px 0 0;
     padding: 0;
-    opacity: .2;
-    transition-duration: .5s; }
+    transition-duration: 1s; }
   #nav li:nth-child(1) {
     margin: 0 24px 0 0; }
   #nav li:nth-child(5) {
@@ -120,18 +114,50 @@ form {
     width: 112px;
     margin: 13px 0 0 3px;
     padding: 0; }
+  #nav svg {
+    width: 112px;
+    margin: 13px 0 0 3px;
+    padding: 0;
+    white-space: none;
+    background-color: red; }
   #nav img:nth-child(2), #nav img:last-child {
     width: 54px; }
+  #nav svg:nth-child(2), #nav svg:last-child {
+    width: 54px; }
+  #nav a {
+    text-decoration: none;
+    color: #fff; }
   #nav #home {
     width: 18px;
     height: 15px;
     margin: 0 0 6px 0; }
 
-#story {
+.nameContainer {
+  text-align: center;
+  transition-duration: 1.5s; }
+
+#headerNavContainer {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 87px; }
+  #headerNavContainer .image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    width: 56px;
+    padding: 0;
+    position: absolute;
+    bottom: 0; }
+
+.story {
   padding: 0;
   margin: 0; }
 
 .learnMore {
+  width: 350px;
+  margin: 15% auto 0 auto;
   text-align: center;
   padding: 0; }
   .learnMore img {
@@ -140,12 +166,11 @@ form {
     margin: 33px auto 0 auto; }
 
 .slide {
-  position: absolute;
-  left: 50%;
-  top: 47%;
-  transform: translate(-50%, -47%);
-  -webkit-transform: translate(-50%, -47%);
   width: 75%;
+  margin: 0 0 0 50px;
+  color: white; }
+
+.slideContent {
   transition-duration: 1s; }
 
 .contact {
@@ -154,14 +179,11 @@ form {
     margin: 30px 0 0 0; }
   .contact p {
     text-align: left;
-    margin: 10% 0 0 0; }
+    margin: 0; }
   .contact .wrapper {
     width: 80%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); }
+    position: relative;
+    margin: 0 auto; }
   .contact img {
     width: 56px;
     margin: 0 auto;
@@ -171,17 +193,12 @@ form {
     width: 215px;
     margin: 57px auto 0 auto; }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 15px 5px 15px 10px;
-  margin: 0;
-  border: 2px solid #ebebeb;
-  background-color: transparent;
-  font-family: NiteBold;
-  font-size: 16px;
-  color: #ebebeb; }
+#linkedin {
+  margin: 50px 0 0 0;
+  padding: 0;
+  text-align: center; }
+  #linkedin button {
+    position: relative; }
 
 .white {
   color: #fff; }
@@ -204,15 +221,19 @@ form {
   height: 100%;
   cursor: pointer; }
 
+.contentContainer {
+  position: relative;
+  padding: 0;
+  margin: 25px 0 0 0;
+  background-color: transparent; }
+
 .navLink {
-  color: red; }
+  color: red;
+  opacity: 1; }
 
 @media all and (min-width: 500px) {
-  #nav {
-    left: 30px;
-    top: 35px;
-    transform: none;
-    -webkit-transform: none; } }
+  .slide {
+    margin: 10% 0 -0 50px; } }
 @media all and (min-width: 600px) {
   button {
     bottom: 30px;
@@ -222,9 +243,29 @@ form {
 
   .contact .wrapper {
     width: 480px; } }
+@media all and (min-width: 700px) {
+  .slide {
+    margin: 20% 0 0 50px; }
+
+  .learnMore {
+    margin: 20% auto 0 auto; } }
 @media all and (min-width: 800px) {
   .learnMore {
-    width: 600; } }
+    width: 600; }
+
+  .slide {
+    margin: 20% auto 0 auto; } }
+@media all and (min-width: 900px) {
+  .slide {
+    width: 650px;
+    margin: 17% auto 0 auto; }
+
+  .learnMore {
+    margin: 18% auto 0 auto; } }
 @media all and (min-width: 1000px) {
   .slide {
-    width: 650px; } }
+    width: 650px;
+    margin: 16% auto 0 auto; } }
+@media all and (min-width: 1000px) {
+  .learnMore {
+    margin: 16% auto 0 auto; } }
