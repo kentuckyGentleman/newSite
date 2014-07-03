@@ -134,6 +134,7 @@ form {
 
 .nameContainer {
   text-align: center;
+  position: relative;
   transition-duration: 1.5s; }
 
 #headerNavContainer {
@@ -152,12 +153,12 @@ form {
     bottom: 0; }
 
 .story {
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 .learnMore {
   width: 350px;
-  margin: 15% auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding: 0; }
   .learnMore img {
@@ -167,11 +168,12 @@ form {
 
 .slide {
   width: 75%;
-  margin: 0 0 0 50px;
+  margin-left: 50px;
   color: white; }
 
 .slideContent {
-  transition-duration: 1s; }
+  transition-duration: 1s;
+  position: relative; }
 
 .contact {
   text-align: center; }
@@ -224,8 +226,7 @@ form {
 .contentContainer {
   position: relative;
   padding: 0;
-  margin: 25px 0 0 0;
-  background-color: transparent; }
+  margin: 25px 0 0 0; }
 
 .navLink {
   color: red;
@@ -233,7 +234,7 @@ form {
 
 @media all and (min-width: 500px) {
   .slide {
-    margin: 10% 0 -0 50px; } }
+    margin: 10% 0 0 50px; } }
 @media all and (min-width: 600px) {
   button {
     bottom: 30px;
@@ -245,27 +246,27 @@ form {
     width: 480px; } }
 @media all and (min-width: 700px) {
   .slide {
-    margin: 20% 0 0 50px; }
+    margin: 0 0 0 50px; }
 
   .learnMore {
-    margin: 20% auto 0 auto; } }
+    margin: 0 auto 0 auto; } }
 @media all and (min-width: 800px) {
   .learnMore {
     width: 600; }
 
   .slide {
-    margin: 20% auto 0 auto; } }
+    margin: 0 auto 0 auto; } }
 @media all and (min-width: 900px) {
   .slide {
     width: 650px;
-    margin: 17% auto 0 auto; }
+    margin: 0 auto 0 auto; }
 
   .learnMore {
-    margin: 18% auto 0 auto; } }
+    margin: 0 auto 0 auto; } }
 @media all and (min-width: 1000px) {
   .slide {
     width: 650px;
-    margin: 16% auto 0 auto; } }
+    margin: 0 auto 0 auto; } }
 @media all and (min-width: 1000px) {
   .learnMore {
-    margin: 16% auto 0 auto; } }
+    margin: 0 auto 0 auto; } }

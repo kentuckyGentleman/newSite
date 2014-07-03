@@ -72,7 +72,6 @@ header{
 	background-color: green;
 	position: absolute;
 	bottom: 0;
-	// width: 260px;
 	h2{
 		margin: 25px 0 0 0;
 	}
@@ -179,6 +178,7 @@ form{
 
 .nameContainer{
 	text-align: center;
+	position: relative;
 	transition-duration: 1.5s;
 }
 
@@ -200,22 +200,15 @@ form{
 	}
 }
 
-
-
 .story{
 	padding: 0;
-	margin: 0;
 	// background-color: red;
 }
 
 .learnMore{
-	// position: absolute;
- //  	left: 50%;
- //  	top: 50%;
- //  	transform: translate(-50%, -50%);
- //  	-webkit-transform: translate(-50%, -50%);
  	width: 350px;
- 	margin: 15% auto 0 auto;
+ 	margin-left: auto;
+ 	margin-right: auto;
 	text-align: center;
 	padding: 0;
 	img{
@@ -227,13 +220,14 @@ form{
 
 .slide{
 	width: 75%;
-	// background-color: blue;
-	margin: 0 0 0 50px;
+	margin-left: 50px;
 	color: white;
 }
 
 .slideContent{
 	transition-duration: 1s;
+	position: relative;
+	// background-color: blue;
 }
 
 .contact{
@@ -312,7 +306,7 @@ form{
 	position: relative;
 	padding: 0;
 	margin: 25px 0 0 0;
-	background-color: transparent;
+	// background-color: red;
 }
 
 .navLink{
@@ -323,7 +317,7 @@ form{
 
 @media all and (min-width: 500px){
 	.slide{
-		margin: 10% 0 -0 50px;
+		margin: 10% 0 0 50px;
 	}
 }
 
@@ -341,10 +335,10 @@ form{
 
 @media all and (min-width: 700px){
 	.slide{
-		margin: 20% 0 0 50px;
+		margin: 0 0 0 50px;
 	}
 	.learnMore{
-		margin: 20% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 }
 
@@ -353,29 +347,29 @@ form{
 		width: 600;
   	}
   	.slide{
-		margin: 20% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 }
 
 @media all and (min-width: 900px){
 	.slide{
 		width: 650px;
-		margin: 17% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 	.learnMore{
-		margin: 18% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 }
 
 @media all and (min-width: 1000px){
 	.slide{
 		width: 650px;
-		margin: 16% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 }
 
 @media all and (min-width: 1000px){
 	.learnMore{
-		margin: 16% auto 0 auto;
+		margin: 0 auto 0 auto;
 	}
 }
