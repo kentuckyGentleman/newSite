@@ -29,7 +29,7 @@ h2 {
 h3 {
   font-family: NiteReg;
   font-size: 11px;
-  letter-spacing: 5;
+  letter-spacing: 5px;
   padding: 0;
   margin: 0; }
 
@@ -91,7 +91,7 @@ form {
 
 #nav {
   position: absolute;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 40px;
   bottom: 0;
   padding: 0;
   color: white; }
@@ -103,11 +103,11 @@ form {
   #nav li {
     text-align: center;
     display: inline-block;
-    margin: 0 24px 0 0;
+    margin: 0 12px 0 0;
     padding: 0;
     transition-duration: 1s; }
   #nav li:nth-child(1) {
-    margin: 0 24px 0 0; }
+    margin: 0 21px 0 0; }
   #nav li:nth-child(5) {
     margin: 0; }
   #nav img {
@@ -135,7 +135,8 @@ form {
 .nameContainer {
   text-align: center;
   position: relative;
-  transition-duration: 1.5s; }
+  transition-duration: 1.5s;
+  margin: 0; }
 
 #headerNavContainer {
   position: relative;
@@ -153,14 +154,19 @@ form {
     bottom: 0; }
 
 .story {
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
 
 .learnMore {
   width: 350px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%); }
   .learnMore img {
     width: 204px;
     height: 13px;
@@ -168,12 +174,13 @@ form {
 
 .slide {
   width: 75%;
-  margin-left: 50px;
+  margin-left: 45px;
   color: white; }
 
 .slideContent {
   transition-duration: 1s;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .contact {
   text-align: center; }
@@ -190,7 +197,7 @@ form {
     width: 56px;
     margin: 0 auto;
     padding: 0; }
-  .contact button {
+  .contact .btnSend {
     position: relative;
     width: 215px;
     margin: 57px auto 0 auto; }
@@ -246,7 +253,10 @@ form {
     width: 480px; } }
 @media all and (min-width: 700px) {
   .slide {
-    margin: 0 0 0 50px; }
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%); }
 
   .learnMore {
     margin: 0 auto 0 auto; } }
