@@ -89,45 +89,45 @@ form {
     height: 50px;
     margin: 15px 0 0 0; }
 
-#nav {
+.navStyle {
   position: absolute;
   margin: 0 0 0 40px;
   bottom: 0;
   padding: 0;
   color: white; }
-  #nav ul {
+  .navStyle ul {
     width: 320px;
     list-style: none;
     padding: 0;
     margin: 0; }
-  #nav li {
+  .navStyle li {
     text-align: center;
     display: inline-block;
     margin: 0 12px 0 0;
     padding: 0;
     transition-duration: 1s; }
-  #nav li:nth-child(1) {
+  .navStyle li:nth-child(1) {
     margin: 0 21px 0 0; }
-  #nav li:nth-child(5) {
+  .navStyle li:nth-child(5) {
     margin: 0; }
-  #nav img {
+  .navStyle img {
     width: 112px;
     margin: 13px 0 0 3px;
     padding: 0; }
-  #nav svg {
+  .navStyle svg {
     width: 112px;
     margin: 13px 0 0 3px;
     padding: 0;
     white-space: none;
     background-color: red; }
-  #nav img:nth-child(2), #nav img:last-child {
+  .navStyle img:nth-child(2), .navStyle img:last-child {
     width: 54px; }
-  #nav svg:nth-child(2), #nav svg:last-child {
+  .navStyle svg:nth-child(2), .navStyle svg:last-child {
     width: 54px; }
-  #nav a {
+  .navStyle a {
     text-decoration: none;
     color: #fff; }
-  #nav #home {
+  .navStyle #home {
     width: 18px;
     height: 15px;
     margin: 0 0 6px 0; }

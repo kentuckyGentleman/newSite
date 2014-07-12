@@ -1,4 +1,5 @@
 $('#nav').hide();
+$('#blackNav').hide();
 // $('.white').hide();
 $(".story").slick({
 	arrows: false,
@@ -29,6 +30,7 @@ getCurrentSlide = function(){
 			$("#headerNavContainer .image").fadeIn(1500);
 			$(".nameContainer").css("color","black");
 		});
+		$("#blackNav").fadeOut(500);
 	} 
 	if (currentSlide > 0 && currentSlide < 4){
 		$("#getInTouch").fadeIn(1000);
@@ -38,11 +40,15 @@ getCurrentSlide = function(){
 		$("#headerNavContainer .image").fadeOut(1000, function(){
 			$("#nav").fadeIn(1500);
 		});
+		$("#blackNav").fadeOut(500);
 	} 
 	if (currentSlide == 4){
 		$("body").css("background-color","white");
 		// $(".slide").removeClass("white");
 		$("#getInTouch").fadeOut(500);
+		$("#nav").fadeOut(500, function(){
+			$("#blackNav").fadeIn(1500);
+		});
 	}
 	// console.log(currentSlide);
 }
@@ -105,8 +111,9 @@ getCurrentSlide = function(){
 		}
 	});
 
+//"Let's get in touch"
 	$("#getInTouch").click(function(){
-		getCurrentSlide();
 		$(".story").slickGoTo(4);
-		$("svg").css("fill","#000000");
+		getCurrentSlide();
+		
 	})
