@@ -1,55 +1,282 @@
-/*
-Syntax error: Invalid CSS after "LiteBold": expected expression (e.g. 1px, bold), was ";"
-        on line 2 of base.css
+@font-face {
+  font-family: LiteBold;
+  src: url("fonts/Liteweit-Bold.ttf"); }
 
-1: @font-face {
-2:   font-family: LiteBold;
-3:   src: url("fonts/Liteweit-Bold.ttf"); }
-4: 
-5: @font-face {
-6:   font-family: LiteReg;
-7:   src: url("fonts/Liteweit-Regular.ttf"); }
+@font-face {
+  font-family: LiteReg;
+  src: url("fonts/Liteweit-Regular.ttf"); }
 
-Backtrace:
-base.css:2
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/lexer.rb:206:in `expected!'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:493:in `assert_done'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:50:in `parse'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:166:in `parse'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script.rb:31:in `parse'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:882:in `parse_script'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:608:in `parse_property'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:597:in `parse_property_or_rule'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:578:in `parse_line'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:471:in `build_tree'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:490:in `block in append_children'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:489:in `each'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:489:in `append_children'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:480:in `block in build_tree'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:473:in `each'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:473:in `build_tree'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:490:in `block in append_children'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:489:in `each'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:489:in `append_children'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:345:in `_to_tree'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:235:in `watch'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin.rb:107:in `method_missing'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:463:in `watch_or_update'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
-/Users/robertgrober/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/bin/sass:13:in `<top (required)>'
-/Users/robertgrober/.rbenv/versions/2.1.2/bin/sass:23:in `load'
-/Users/robertgrober/.rbenv/versions/2.1.2/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"LiteBold\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of base.css\A \A 1: @font-face {\A 2:   font-family: LiteBold;\A 3:   src: url(\"fonts/Liteweit-Bold.ttf\"); }\A 4: \A 5: @font-face {\A 6:   font-family: LiteReg;\A 7:   src: url(\"fonts/Liteweit-Regular.ttf\"); }"; }
+@font-face {
+  font-family: NiteReg;
+  src: url("fonts/Niteweit-Regular.ttf"); }
+
+@font-face {
+  font-family: NiteBold;
+  src: url("fonts/Niteweit-Bold.ttf"); }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s; }
+
+h2 {
+  font-family: NiteBold;
+  font-size: 19px;
+  padding: 0;
+  margin: 0 0 5px 0; }
+
+h3 {
+  font-family: NiteReg;
+  font-size: 11px;
+  letter-spacing: 5px;
+  padding: 0;
+  margin: 0; }
+
+h4 {
+  font-family: NiteBold;
+  font-size: 11px;
+  letter-spacing: 5;
+  line-height: 0;
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-family: LiteReg;
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5; }
+
+header {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  background-color: green;
+  position: absolute;
+  bottom: 0; }
+  header h2 {
+    margin: 25px 0 0 0; }
+  header h3 {
+    margin: 3px 0 0 0; }
+  header img {
+    width: 56px;
+    margin: 0 auto;
+    padding: 0; }
+
+button {
+  height: 62px;
+  padding: 0;
+  border: 2px solid #766400;
+  background-color: transparent;
+  font-family: NiteBold;
+  font-size: 16px;
+  color: #766400;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 187px; }
+  button button:hover {
+    color: #fff;
+    border: 2px solid #fff; }
+
+form {
+  margin: 35px 0 0 0; }
+  form input {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0 0 0; }
+
+.navStyle {
+  position: absolute;
+  margin: 0 0 0 40px;
+  bottom: 0;
+  padding: 0;
+  color: white; }
+  .navStyle ul {
+    width: 320px;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .navStyle li {
+    text-align: center;
+    display: inline-block;
+    margin: 0 12px 0 0;
+    padding: 0;
+    transition-duration: 1s; }
+  .navStyle li:nth-child(1) {
+    margin: 0 21px 0 0; }
+  .navStyle li:nth-child(5) {
+    margin: 0; }
+  .navStyle img {
+    width: 112px;
+    margin: 13px 0 0 3px;
+    padding: 0; }
+  .navStyle svg {
+    width: 112px;
+    margin: 13px 0 0 3px;
+    padding: 0;
+    white-space: none;
+    background-color: red; }
+  .navStyle img:nth-child(2), .navStyle img:last-child {
+    width: 54px; }
+  .navStyle svg:nth-child(2), .navStyle svg:last-child {
+    width: 54px; }
+  .navStyle a {
+    text-decoration: none;
+    color: #fff; }
+  .navStyle #home {
+    width: 18px;
+    height: 15px;
+    margin: 0 0 6px 0; }
+
+.nameContainer {
+  text-align: center;
+  position: relative;
+  transition-duration: 1.5s;
+  margin: 0; }
+
+#headerNavContainer {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 87px; }
+  #headerNavContainer .image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    width: 56px;
+    padding: 0;
+    position: absolute;
+    bottom: 0; }
+
+.story {
+  padding: 0;
+  height: 100%; }
+
+.learnMore {
+  width: 350px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%); }
+  .learnMore img {
+    width: 204px;
+    height: 13px;
+    margin: 33px auto 0 auto; }
+
+.slide {
+  width: 75%;
+  margin-left: 45px;
+  color: white; }
+
+.slideContent {
+  transition-duration: 1s;
+  position: relative;
+  height: 100%; }
+
+.contact {
+  text-align: center; }
+  .contact .field:nth-child(2) {
+    margin: 30px 0 0 0; }
+  .contact p {
+    text-align: left;
+    margin: 0; }
+  .contact .wrapper {
+    width: 80%;
+    position: relative;
+    margin: 0 auto; }
+  .contact img {
+    width: 56px;
+    margin: 0 auto;
+    padding: 0; }
+  .contact .btnSend {
+    position: relative;
+    width: 215px;
+    margin: 57px auto 0 auto; }
+
+#linkedin {
+  margin: 50px 0 0 0;
+  padding: 0;
+  text-align: center; }
+  #linkedin button {
+    position: relative; }
+
+.white {
+  color: #fff; }
+
+#hitLeft {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  background-color: transparent;
+  width: 10%;
+  height: 100%;
+  cursor: pointer; }
+
+#hitRight {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  background-color: transparent;
+  width: 10%;
+  height: 100%;
+  cursor: pointer; }
+
+.contentContainer {
+  position: relative;
+  padding: 0;
+  margin: 25px 0 0 0; }
+
+.navLink {
+  color: red;
+  opacity: 1; }
+
+@media all and (min-width: 500px) {
+  .slide {
+    margin: 10% 0 0 50px; } }
+@media all and (min-width: 600px) {
+  button {
+    bottom: 30px;
+    left: initial;
+    right: 30px;
+    margin: 0; }
+
+  .contact .wrapper {
+    width: 480px; } }
+@media all and (min-width: 700px) {
+  .slide {
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%); }
+
+  .learnMore {
+    margin: 0 auto 0 auto; } }
+@media all and (min-width: 800px) {
+  .learnMore {
+    width: 600; }
+
+  .slide {
+    margin: 0 auto 0 auto; } }
+@media all and (min-width: 900px) {
+  .slide {
+    width: 650px;
+    margin: 0 auto 0 auto; }
+
+  .learnMore {
+    margin: 0 auto 0 auto; } }
+@media all and (min-width: 1000px) {
+  .slide {
+    width: 650px;
+    margin: 0 auto 0 auto; } }
+@media all and (min-width: 1000px) {
+  .learnMore {
+    margin: 0 auto 0 auto; } }
