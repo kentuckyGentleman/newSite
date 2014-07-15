@@ -1,5 +1,4 @@
 $('#nav').hide();
-$('#blackNav').hide();
 // $('.white').hide();
 $(".story").slick({
 	arrows: false,
@@ -30,25 +29,31 @@ getCurrentSlide = function(){
 			$("#headerNavContainer .image").fadeIn(1500);
 			$(".nameContainer").css("color","black");
 		});
-		$("#blackNav").fadeOut(500);
 	} 
 	if (currentSlide > 0 && currentSlide < 4){
 		$("#getInTouch").fadeIn(1000);
 		$("body").css("background-color","black");
-		// $(".slide").addClass("white");
+		$("#nav h4").css("color", "#ffffff");
+		$("#nav li:first-child img").attr('src','icon_home.svg');
+		$("#nav li:nth-child(2) img").attr('src','whitelogo.svg');
+		$("#nav li:nth-child(3) img").attr('src','logo_02.svg');
+		$("#nav li:nth-child(4) img").attr('src','logo_03.svg');
 		$(".nameContainer").css("color","transparent");
 		$("#headerNavContainer .image").fadeOut(1000, function(){
 			$("#nav").fadeIn(1500);
 		});
-		$("#blackNav").fadeOut(500);
 	} 
 	if (currentSlide == 4){
 		$("body").css("background-color","white");
-		// $(".slide").removeClass("white");
-		$("#getInTouch").fadeOut(500);
-		$("#nav").fadeOut(500, function(){
-			$("#blackNav").fadeIn(1500);
+		$("#headerNavContainer .image").fadeOut(1000, function(){
+			$("#nav").fadeIn(1500);
+			$("#nav h4").css("color", "#000000");
+		$("#nav li:first-child img").attr('src','icon_home_black.svg');
+		$("#nav li:nth-child(2) img").attr('src','whitelogo_black.svg');
+		$("#nav li:nth-child(3) img").attr('src','logo_02_black.svg');
+		$("#nav li:nth-child(4) img").attr('src','logo_03_black.svg');
 		});
+		$("#getInTouch").fadeOut(500);
 	}
 	// console.log(currentSlide);
 }
@@ -61,7 +66,7 @@ getCurrentSlide = function(){
 		$(".story").slickGoTo(linkIndex);
 		getCurrentSlide();	
 	}).on("hover", function(){
-		$(nav).css("opacity","1");
+		$(this).css("opacity","1");
 	});
 
 //Roll over to either side of window shifts slide content to either side of window

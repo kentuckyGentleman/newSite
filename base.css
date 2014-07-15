@@ -108,21 +108,11 @@ form {
     transition-duration: 1s; }
   .navStyle li:nth-child(1) {
     margin: 0 21px 0 0; }
-  .navStyle li:nth-child(5) {
-    margin: 0; }
   .navStyle img {
     width: 112px;
-    margin: 13px 0 0 3px;
+    margin: 13px 0 0 0;
     padding: 0; }
-  .navStyle svg {
-    width: 112px;
-    margin: 13px 0 0 3px;
-    padding: 0;
-    white-space: none;
-    background-color: red; }
-  .navStyle img:nth-child(2), .navStyle img:last-child {
-    width: 54px; }
-  .navStyle svg:nth-child(2), .navStyle svg:last-child {
+  .navStyle img:nth-child(2), .navStyle img:nth-child(3), .navStyle img:last-child {
     width: 54px; }
   .navStyle a {
     text-decoration: none;

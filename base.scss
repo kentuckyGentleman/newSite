@@ -117,17 +117,10 @@ form{
 }
 
 .navStyle{
-	// position: absolute;
-	// z-index: 100;
- //  	left: 50%;
- //  	top: 10%;
- //  	transform: translate(-50%, -10%);
- //  	-webkit-transform: translate(-50%, -10%);
  	position: absolute;
   	margin: 0 0 0 40px;
   	bottom: 0;
 	padding: 0;
-	// transition-duration: 1s;
 	color: white;
 	ul{
 		width: 320px;
@@ -145,25 +138,12 @@ form{
 	li:nth-child(1){
 	margin: 0 21px 0 0;
 	}
-	li:nth-child(5){
-		margin: 0;
-	}
 	img{
 		width: 112px;
-		margin: 13px 0 0 3px;
+		margin: 13px 0 0 0;
 		padding: 0;
 	}
-	svg{
-		width: 112px;
-		margin: 13px 0 0 3px;
-		padding: 0;
-		white-space: none;
-		background-color: red;
-	}
-	img:nth-child(2),img:last-child{
-		width: 54px;
-	}
-	svg:nth-child(2),svg:last-child{
+	img:nth-child(2),img:nth-child(3),img:last-child{
 		width: 54px;
 	}
 	a{
