@@ -68,6 +68,8 @@ button {
   height: 62px;
   padding: 0;
   border: 2px solid #766400;
+  background-image: url("btn_background.svg");
+  background-clip: content-box;
   background-color: transparent;
   font-family: NiteBold;
   font-size: 16px;
@@ -99,7 +101,8 @@ form {
     width: 320px;
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0 auto 0 auto;
+    display: inline; }
   .navStyle li {
     text-align: center;
     display: inline-block;
@@ -111,8 +114,9 @@ form {
   .navStyle img {
     width: 112px;
     margin: 13px 0 0 0;
-    padding: 0; }
-  .navStyle img:nth-child(2), .navStyle img:nth-child(3), .navStyle img:last-child {
+    padding: 0;
+    display: inline-block; }
+  .navStyle img:nth-child(3), .navStyle img:last-child {
     width: 54px; }
   .navStyle a {
     text-decoration: none;
@@ -231,7 +235,10 @@ form {
 
 @media all and (min-width: 500px) {
   .slide {
-    margin: 10% 0 0 50px; } }
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 12%;
+    transform: translateY(-12%); } }
 @media all and (min-width: 600px) {
   button {
     bottom: 30px;
@@ -239,34 +246,18 @@ form {
     right: 30px;
     margin: 0; }
 
-  .contact .wrapper {
-    width: 480px; } }
-@media all and (min-width: 700px) {
   .slide {
-    margin: 0 auto 0 auto;
-    position: relative;
     top: 20%;
     transform: translateY(-20%); }
 
-  .learnMore {
-    margin: 0 auto 0 auto; } }
-@media all and (min-width: 800px) {
-  .learnMore {
-    width: 600; }
+  .btnSend {
+    right: 0; }
 
-  .slide {
-    margin: 0 auto 0 auto; } }
+  .contact .wrapper {
+    width: 480px; }
+
+  .contact {
+    margin: 30px 0 0 0; } }
 @media all and (min-width: 900px) {
   .slide {
-    width: 650px;
-    margin: 0 auto 0 auto; }
-
-  .learnMore {
-    margin: 0 auto 0 auto; } }
-@media all and (min-width: 1000px) {
-  .slide {
-    width: 650px;
-    margin: 0 auto 0 auto; } }
-@media all and (min-width: 1000px) {
-  .learnMore {
-    margin: 0 auto 0 auto; } }
+    width: 600px; } }

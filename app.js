@@ -24,6 +24,7 @@ getCurrentSlide = function(){
 	if(currentSlide == 0){
 		$("#getInTouch").fadeIn(1000);
 		$("body").css("background-color","white");
+		$("button").css("background-image","url('btn_background.svg')");
 		// $(".slide").removeClass("white");
 		$("#nav").fadeOut(500, function(){
 			$("#headerNavContainer .image").fadeIn(1500);
@@ -33,6 +34,7 @@ getCurrentSlide = function(){
 	if (currentSlide > 0 && currentSlide < 4){
 		$("#getInTouch").fadeIn(1000);
 		$("body").css("background-color","black");
+		$("button").css("background-image","url('btn_background_black.svg')");
 		$("#nav h4").css("color", "#ffffff");
 		$("#nav li:first-child img").attr('src','icon_home.svg');
 		$("#nav li:nth-child(2) img").attr('src','whitelogo.svg');
@@ -45,6 +47,7 @@ getCurrentSlide = function(){
 	} 
 	if (currentSlide == 4){
 		$("body").css("background-color","white");
+		$("button").css("background-image","url('btn_background.svg')");
 		$("#headerNavContainer .image").fadeOut(1000, function(){
 			$("#nav").fadeIn(1500);
 			$("#nav h4").css("color", "#000000");
@@ -65,7 +68,9 @@ getCurrentSlide = function(){
 		// console.log(linkIndex);
 		$(".story").slickGoTo(linkIndex);
 		getCurrentSlide();	
-	}).on("hover", function(){
+	});
+
+	$(nav).on("hover", function(){
 		$(this).css("opacity","1");
 	});
 
