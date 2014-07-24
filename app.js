@@ -1,3 +1,7 @@
+$( document ).on( "mobileinit", function() {
+    $.mobile.loader.prototype.options.disabled = true;
+});
+
 $('#nav').hide();
 // $('.white').hide();
 $(".story").slick({
@@ -23,7 +27,7 @@ getCurrentSlide = function(){
 
 	if(currentSlide == 0){
 		$("#getInTouch").fadeIn(1000);
-		$("body").css("background-color","white");
+		$("body").css("backgroundColor","white");
 		$("button").css("background-image","url('btn_background.svg')");
 		// $(".slide").removeClass("white");
 		$("#nav").fadeOut(500, function(){
@@ -33,7 +37,7 @@ getCurrentSlide = function(){
 	} 
 	if (currentSlide > 0 && currentSlide < 4){
 		$("#getInTouch").fadeIn(1000);
-		$("body").css("background-color","black");
+		$("body").css("backgroundColor","black");
 		$("button").css("background-image","url('btn_background_black.svg')");
 		$("#nav h4").css("color", "#ffffff");
 		$("#nav li:first-child img").attr('src','icon_home.svg');
@@ -46,7 +50,7 @@ getCurrentSlide = function(){
 		});
 	} 
 	if (currentSlide == 4){
-		$("body").css("background-color","white");
+		$("body").css("backgroundColor","white");
 		$("button").css("background-image","url('btn_background.svg')");
 		$("#headerNavContainer .image").fadeOut(1000, function(){
 			$("#nav").fadeIn(1500);

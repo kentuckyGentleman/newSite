@@ -18,7 +18,9 @@ html, body {
   padding: 0;
   margin: 0;
   transition: background-color 1s;
-  -webkit-transition: background-color 1s; }
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s; }
 
 h2 {
   font-family: NiteBold;
@@ -108,7 +110,10 @@ form {
     display: inline-block;
     margin: 0 12px 0 0;
     padding: 0;
-    transition-duration: 1s; }
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s; }
   .navStyle li:nth-child(1) {
     margin: 0 21px 0 0; }
   .navStyle img {
@@ -130,6 +135,9 @@ form {
   text-align: center;
   position: relative;
   transition-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
   margin: 0; }
 
 #headerNavContainer {
@@ -142,6 +150,8 @@ form {
     left: 50%;
     transform: translate(-50%);
     -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
     width: 56px;
     padding: 0;
     position: absolute;
@@ -160,7 +170,10 @@ form {
   padding: 0;
   position: relative;
   top: 20%;
-  transform: translateY(-20%); }
+  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -o-transform: translateY(-20%); }
   .learnMore img {
     width: 204px;
     height: 13px;
@@ -173,6 +186,9 @@ form {
 
 .slideContent {
   transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
   position: relative;
   height: 100%; }
 
@@ -213,7 +229,8 @@ form {
   background-color: transparent;
   width: 10%;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none; }
 
 #hitRight {
   position: fixed;
@@ -222,7 +239,8 @@ form {
   background-color: transparent;
   width: 10%;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none; }
 
 .contentContainer {
   position: relative;
@@ -238,7 +256,10 @@ form {
     margin: 0 auto 0 auto;
     position: relative;
     top: 12%;
-    transform: translateY(-12%); } }
+    transform: translateY(-12%);
+    -webkit-transform: translateY(-12%);
+    -moz-transform: translateY(-12%);
+    -o-transform: translateY(-12%); } }
 @media all and (min-width: 600px) {
   button {
     bottom: 30px;
@@ -248,7 +269,10 @@ form {
 
   .slide {
     top: 20%;
-    transform: translateY(-20%); }
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -o-transform: translateY(-20%); }
 
   .btnSend {
     right: 0; }
@@ -260,4 +284,7 @@ form {
     margin: 30px 0 0 0; } }
 @media all and (min-width: 900px) {
   .slide {
-    width: 600px; } }
+    width: 600px; }
+
+  #hitRight, #hitLeft {
+    display: initial; } }
