@@ -48,7 +48,7 @@ p {
   font-size: 19px;
   padding: 0;
   margin: 0;
-  line-height: 1.5; }
+  line-height: 1.4; }
 
 header {
   margin: 0;
@@ -95,7 +95,7 @@ form {
 
 .navStyle {
   position: absolute;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
   bottom: 0;
   padding: 0;
   color: white; }
@@ -138,7 +138,8 @@ form {
   -webkit-transition-duration: 1.5s;
   -moz-transition-duration: 1.5s;
   -o-transition-duration: 1.5s;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 #headerNavContainer {
   position: relative;
@@ -159,29 +160,28 @@ form {
 
 .story {
   padding: 0;
+  margin: 0;
   height: 100%; }
 
 .learnMore {
-  width: 350px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  width: 324px;
+  margin: 0 auto 0 auto;
   text-align: center;
   padding: 0;
   position: relative;
-  top: 20%;
-  transform: translateY(-20%);
-  -webkit-transform: translateY(-20%);
-  -moz-transform: translateY(-20%);
-  -o-transform: translateY(-20%); }
+  top: 18%;
+  transform: translateY(-18%);
+  -webkit-transform: translateY(-18%);
+  -moz-transform: translateY(-18%);
+  -o-transform: translateY(-18%); }
   .learnMore img {
     width: 204px;
     height: 13px;
     margin: 33px auto 0 auto; }
 
 .slide {
-  width: 75%;
-  margin-left: 45px;
+  width: 81.25%;
+  margin-left: 30px;
   color: white; }
 
 .slideContent {
@@ -189,7 +189,6 @@ form {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
-  position: relative;
   height: 100%; }
 
 .contact {
@@ -200,7 +199,7 @@ form {
     text-align: left;
     margin: 0; }
   .contact .wrapper {
-    width: 80%;
+    width: 81.25%;
     position: relative;
     margin: 0 auto; }
   .contact img {
@@ -252,14 +251,21 @@ form {
   opacity: 1; }
 
 @media all and (min-width: 500px) {
+  .learnMore {
+    top: 23%;
+    transform: translateY(-23%);
+    -webkit-transform: translateY(-23%);
+    -moz-transform: translateY(-23%);
+    -o-transform: translateY(-23%); }
+
   .slide {
     margin: 0 auto 0 auto;
     position: relative;
-    top: 12%;
-    transform: translateY(-12%);
-    -webkit-transform: translateY(-12%);
-    -moz-transform: translateY(-12%);
-    -o-transform: translateY(-12%); } }
+    top: 17%;
+    transform: translateY(-17%);
+    -webkit-transform: translateY(-17%);
+    -moz-transform: translateY(-17%);
+    -o-transform: translateY(-17%); } }
 @media all and (min-width: 600px) {
   button {
     bottom: 30px;
@@ -268,11 +274,14 @@ form {
     margin: 0; }
 
   .slide {
-    top: 20%;
-    transform: translateY(-20%);
-    -webkit-transform: translateY(-20%);
-    -moz-transform: translateY(-20%);
-    -o-transform: translateY(-20%); }
+    top: 27%;
+    transform: translateY(-27%);
+    -webkit-transform: translateY(-27%);
+    -moz-transform: translateY(-27%);
+    -o-transform: translateY(-27%); }
+
+  .slideContent {
+    margin: 0; }
 
   .btnSend {
     right: 0; }

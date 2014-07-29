@@ -1,7 +1,3 @@
-$( document ).on( "mobileinit", function() {
-    $.mobile.loader.prototype.options.disabled = true;
-});
-
 $('#nav').hide();
 // $('.white').hide();
 $(".story").slick({
@@ -11,6 +7,12 @@ $(".story").slick({
 	infinite: false,
 	speed: 1700
 });
+
+//Add swipe functionality
+// var hammertime = Hammer($(".story"));
+// hammertime.on('swipeleft swiperight', function() {
+//     getCurrentSlide();
+// });
 
 var currentSlide = $(".story").slickCurrentSlide();
 var nav = $("#nav li");
@@ -77,6 +79,10 @@ getCurrentSlide = function(){
 	$(nav).on("hover", function(){
 		$(this).css("opacity","1");
 	});
+
+	$(".story").on("flick", function(){
+		getCurrentSlide();
+	})
 
 //Roll over to either side of window shifts slide content to either side of window
 	var $left = $("#hitLeft");
