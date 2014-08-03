@@ -16,11 +16,7 @@
 
 html, body {
   padding: 0;
-  margin: 0;
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -o-transition: background-color 1s; }
+  margin: 0; }
 
 h2 {
   font-family: NiteBold;
@@ -98,7 +94,8 @@ form {
   margin: 0 0 0 30px;
   bottom: 0;
   padding: 0;
-  color: white; }
+  color: white;
+  opacity: 0; }
   .navStyle ul {
     width: 320px;
     list-style: none;

@@ -25,10 +25,10 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	transition: background-color 1s; 
-	-webkit-transition: background-color 1s;
-	-moz-transition: background-color 1s;
-	-o-transition: background-color 1s;
+	// transition: background-color 1s; 
+	// -webkit-transition: background-color 1s;
+	// -moz-transition: background-color 1s;
+	// -o-transition: background-color 1s;
 }
 
 h2{
@@ -123,6 +123,7 @@ form{
   	bottom: 0;
 	padding: 0;
 	color: white;
+	opacity: 0;
 	ul{
 		width: 320px;
 		list-style: none;
